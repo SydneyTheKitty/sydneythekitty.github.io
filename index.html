@@ -20,14 +20,14 @@
                     </div>
                 </div>
                 <div class="bottom">
-                    <div></div>
-                    <div></div>
+                    <div class="filler"></div>
                     <div class="socials">
-                        <a href="https://www.linkedin.com/in/lydia-keeping-1a77433a4/"><img src="img/linkedin_logo.png" alt="LinkedIn" /></a>
-                        <p><img src="img/email.svg" alt="Email" /><span>lydiakeeping@outlook.com</span></p>
+                        <p class="social" id="email" onclick="copyEmail()"><img src="img/email.svg" alt="Email" /><span class="mail"><span id="copied" class="copied">Copied!</span>lydiakeeping@outlook.com</span></p>
+                        <a class="social" href="https://www.linkedin.com/in/lydia-keeping-1a77433a4/"><img src="img/linkedin_logo.png" alt="LinkedIn" /></a>
                     </div>
                 </div>
             </div>
+            <hr />
             <div class="main">
                 <h2>Pieces by Lydia Amber Keeping</h2>
                 <a href="" id="berryBlast" class="showcase">Berry Blast!</a>
@@ -38,3 +38,15 @@
         </main>
     </body>
 </html>
+<script>
+    const delay = ms => new Promise(res => setTimeout(res, ms));
+
+    async function copyEmail() {
+        navigator.clipboard.writeText("lydiakeeping@outlook.com");
+        var copied = document.getElementById("copied");
+        copied.classList.add("active");
+        await delay(750);
+        copied.classList.remove("active");
+    }
+
+</script>
