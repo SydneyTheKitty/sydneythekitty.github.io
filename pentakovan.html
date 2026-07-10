@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" lang="en/ca" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="img/favicon.svg" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Instrument+Serif:ital@0;1&family=Lancelot&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="pentakovan.css" />
+        <title>SìdneÐüKìte</title>
+    </head>
+    <body>
+        <main>
+            <div class="top">
+                <div class="text">
+                    <img src="img/logo.svg" alt="Logo" />
+                    <div class="name">
+                        <p>V:ìdeo Gąm P:rogræmṙ</p>
+                        <h1>S:ìdne Ðü K:ìte</h1>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <div class="filler"></div>
+                    <div class="socials">
+                        <p class="social" id="email" onclick="copyEmail()"><img src="img/email.svg" alt="Email" /><span class="mail"><span id="copied" class="copied">K:aped!</span>l:ìdeük:epìq@ă:tlûk.com</span></p>
+                        <a class="social" href="https://www.linkedin.com/in/lydia-keeping-1a77433a4/"><img src="img/linkedin_logo.png" alt="LinkedIn" /></a>
+                    </div>
+                </div>
+            </div>
+            <hr />
+            <div class="main">
+                <h2>P:esìz Bi L:ìdeü Æ:mbṙ K:epìq</h2>
+                <a href="https://blastinteractive.itch.io/berry-blast" id="berryBlast" class="showcase">B:ãe B:læst!<div class="background"></div></a>
+                <a href="" id="morningCoast" class="showcase">L:it Üv Ðü M:ønìq K:ost<div class="background"></div></a>
+                <a href="" id="treeFeller" class="showcase"><img src="img/tree_feller_logo.svg" alt="Tree Feller"/><div class="background"></div></a>
+                <a href="" id="thouHastGuarded" class="showcase">Ð:ă Hæst G:ardèd<div class="background"></div></a>
+            </div>
+        </main>
+    </body>
+</html>
+<script>
+    const delay = ms => new Promise(res => setTimeout(res, ms));
+
+    async function copyEmail() {
+        navigator.clipboard.writeText("lydiakeeping@outlook.com");
+        var copied = document.getElementById("copied");
+        copied.classList.add("active");
+        await delay(750);
+        copied.classList.remove("active");
+    }
+
+</script>

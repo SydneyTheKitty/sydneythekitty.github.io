@@ -1,0 +1,32 @@
+@font-face {
+    font-family: Pentakovan-Serif;
+    src: url("font/PentakovanSerif.ttf");
+}
+
+.name {
+    font-family: "Pentakovan-Serif", serif;
+    font-size: 53px;
+}
+
+.mail {
+    font-family: "Pentakovan-Serif", serif;
+}
+
+.main h2 {
+    font-family: "Pentakovan-Serif", serif;
+}
+
+
+.showcase {
+    font-family: "Pentakovan-Serif", serif;
+}
+
+#berryBlast {
+    font-family: "Pentakovan-Serif", serif;
+    font-size: 64px;
+}
+
+#morningCoast {
+    font-family: "Pentakovan-Serif", serif;
+    font-size: 56px;
+}
